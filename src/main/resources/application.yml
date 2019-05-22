@@ -1,0 +1,33 @@
+#DB Configuration:层级:spring.datasource.username=root
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot?characterEncoding=utf8
+    username: root
+    password: root
+#JPA Configuration:
+  jpa:
+    database: MySQL
+    show-sql: true
+    generate-ddl: true
+
+#this is change access port number
+#server.port:8888
+server:
+  port: 9527
+
+# 自定义数组/对象
+arr1:
+  - tom
+  - jerry
+  - jack
+  - rose
+arr2:
+  - name: zhangsan
+    age: 18
+  - name: lisi
+    age: 16
+#配置对象 配置一个user对象,对象中包含两个属性
+user2:
+  name: rose
+  age: 20
