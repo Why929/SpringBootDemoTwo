@@ -1,4 +1,4 @@
-#DB Configuration:层级:spring.datasource.username=root
+#DB Configuration:layer :spring.datasource.username=root
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
@@ -14,9 +14,9 @@ spring:
 #this is change access port number
 #server.port:8888
 server:
-  port: 9527
+  port: 9998
 
-# 自定义数组/对象
+# Array Diy
 arr1:
   - tom
   - jerry
@@ -27,7 +27,7 @@ arr2:
     age: 18
   - name: lisi
     age: 16
-#配置对象 配置一个user对象,对象中包含两个属性
+# Diy a user Objece
 user2:
   name: rose
   age: 20

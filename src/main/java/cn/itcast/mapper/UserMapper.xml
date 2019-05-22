@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.itcast.mapper.UserMapper">
+    <select id="findAll" resultType="cn.itcast.pojo.User">
+        select * from user
+    </select>
+</mapper>
+<!--1.如果需要把UserMapper.java 同 UserMapper.xml放到同一处,需要更改pom.xml-->
+<!--#2.连接数据库在.xml .yml中
+    #3.可以在applicaton.xml .yml文件中配置 包扫描
+    #spring集成Mybatis环境
+    #pojo别名扫描包
+    mybatis.type-aliases-package=com.itheima.domain
+    #加载Mybatis映射文件
+    mybatis.mapper-locations=classpath:mapper/*Mapper.xml
+    #4.需要在引导文件上配置 mapper文件扫描@MapperScan("mapper包一级的路径")
+
+-->
