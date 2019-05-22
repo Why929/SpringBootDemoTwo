@@ -4,9 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 @Entity//依赖SpringJpa包//导入的是javax.persistence.Entity
-public class User {
+public class User implements Serializable{
 //1.映射主键:
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

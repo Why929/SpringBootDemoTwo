@@ -10,6 +10,9 @@ spring:
     database: MySQL
     show-sql: true
     generate-ddl: true
+#    redis
+  redis:
+    host: localhost
 
 #this is change access port number
 #server.port:8888
